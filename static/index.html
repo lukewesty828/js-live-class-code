@@ -2,13 +2,21 @@
 <html ng-app="todoApp">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <style>
+    .todo--complete {
+      text-decoration: line-through;
+    }
+    </style>
     <title>Todo App</title>
   </head>
   <body ng-controller="TodoController as ctrl">
-    <h1>Welcome!</h1>
+    <h1>Todo App</h1>
 
-    <!-- html can go here -->
+<ul id="actualList">
+
+</ul>
+
+<button id="filter">Click Me</button>
 
     <script src="/static/bundle.js"></script>
   </body>
